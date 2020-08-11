@@ -2,8 +2,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  min-width: 1000px;
-  font-family: sans-serif;
 }
 
 .title {
@@ -25,32 +23,35 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  width: 100%;
 }
 
 .header__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 70px;
-  margin: 0 0 70px 0;
+  padding-top: 5%;
+  margin: 0 0 5% 0;
 }
 
 .header__logo {
   margin: 0 10% 0 10%;
+  width: 10%;
 }
 
 .header-nav {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 70%;
  }
 
  .header-nav__item {
   display: inline;
-  padding: 1.2em 3em;
+  padding: 2.3%;
   border-bottom: 1px solid rgba(209, 193, 193, 0.7);
   border-top: 1px solid rgba(209, 193, 193, 0.7);
   font-weight: 600;
+  width: 17.5%;
 }
 
 .header__promo {
@@ -59,14 +60,17 @@ header {
   font-size: 80px;
   font-weight: 600;
   font-family:sans-serif;
-  padding-bottom: 10px;
-  padding: 100px 0 170px 0;
+  padding: 5% 0 13% 0;
+  width: 100%;
+  max-height: 600px;
 }
+
+/**/
 
 .new {
   display: flex;
   justify-content: center;
-  margin-bottom: 80px;
+  margin-bottom: 6%;
 }
 
 .new__body {
