@@ -18,6 +18,21 @@ a {
   color: white;
 }
 
+.btn {
+  margin-bottom: 40px;
+  padding: 0.6em 0 0.2em 0;
+  text-align: center;
+  text-decoration: none;
+  width: 30%;
+  height: 5vh;
+  max-height: 40px;
+  color: #c0b8ad;
+  font-weight: 700;
+  font-size: 20px;
+  border: 2px solid #a69f95;
+  border-radius: 6px;
+}
+
 header {
   background-image: url(img/depositphotos_14294527-stock-photo-seeds-and-ears-of-cereal.jpg);
   background-repeat: no-repeat;
@@ -46,7 +61,7 @@ header {
  }
 
  .header-nav__item {
-  display: inline;
+  display: inline-block;
   padding: 2.3%;
   border-bottom: 1px solid rgba(209, 193, 193, 0.7);
   border-top: 1px solid rgba(209, 193, 193, 0.7);
@@ -65,32 +80,33 @@ header {
   max-height: 600px;
 }
 
-/**/
-
 .new {
   display: flex;
   justify-content: center;
   margin-bottom: 6%;
+  width: 100%;
 }
 
 .new__body {
-  width: 800px;
+  width: 50%;
+  max-width: 1300px;
+  margin: 0 auto  ;
   display: flex;
   flex-direction: column-reverse;
 }
 
 .new__items {
   display: flex;
-  padding: 10px 0 10px 30px;
+  width: 100%;
+  padding: 0;
   border-left: 1px solid black;
 }
 
 .item {
-  padding-top: 20px; 
+  padding: 20px 0 0 25px; 
   display: flex;
   flex-wrap: wrap;
-  width: 400px;
-  margin-left: 10px;
+  max-width: 1300px;
   border-right: 1px solid black;
 }
 
@@ -107,44 +123,46 @@ header {
   margin-right: 1px;
 }
 
-.item__text {
-  font-size: 17px;
-  order: 4;
-  height: 100px;
-  padding-right: 20px;
-  margin: -15px 0 0 0;
-}
-
-.item__footer {
-  height: 70px;
-  width: 100%;
-  order: 5;
-  display: flex;
-  justify-content: space-around;
-}
-
 .item__table {
   font-weight: 600;
   width: 100%;
   border-bottom: 1px solid black;
 }
 
+.item__title {
+  margin-bottom: 0;
+}
+
+.item__text {
+  font-size: 17px;
+  order: 4;
+  height: 100px;
+  padding: 5px 20px 0 0;
+  margin: 0 0 0 0;
+  width: 100%;
+}
+
+.item__footer {
+  height: 7%;
+  width: 100%;
+  order: 5;
+  display: flex;
+  justify-content: space-between;
+}
+
+
 .item__btn {
   margin: 0 10px 0 0;
-  display: inline-block;
-  background: #ffffff;
-  color: #834700;
-  text-align: center;
-  border: 2px solid #834700;
-  border-radius: 4px;
-  font-weight: 600;
-  width: 130px;
+  display: inline-block; 
 }
 
 .item__btn:nth-of-type(2) {
   background: #834700;
-  width: 100px;
+  color: #834700;
+  width: 20%;
   color: #ffd29e;
+  border: 2px solid #8b5e26;
+  text-align: center;
 }
 
 .item__btn:hover {
@@ -161,7 +179,7 @@ header {
 .item__price {
   display: inline-block;
   text-align: center;
-  width: 130px;
+  width: 40%;
 }
 
 .dignity {
@@ -170,11 +188,13 @@ header {
   justify-content: center;
   min-height: 400px;
   background-color: #ffcb78;
-  margin-bottom: 80px;
+  margin-bottom: 6%;
 }
 
 .dignity ul {
-  width: 1000px;
+  text-align: center;
+  width: 50%;
+  max-width: 1300px;
   display: flex;
   flex-shrink: 1;
   padding: 45px 0 45px 0;
@@ -196,20 +216,19 @@ header {
 .history {
   display: flex;
   justify-content: center;
-  margin-bottom: 80px;
+  margin-bottom: 6%;
 }
 
 .history__body {
-  margin-top: 30px;
   padding: 0 10px;
-  width: 1000px;
+  max-width: 1300px;
+  width: 50%;
 }
 
 .history__name-source {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-right: 100px; 
 }
 
 .history__name {
@@ -224,19 +243,21 @@ header {
 
 .history__main-content {
   margin: 40px 0;
-  margin-right: 100px; 
   display: flex;
   justify-content: space-between;
 }
 
 .history__photo {
   order: 2;
+  width: 30%;
 }
 
 .history__text {
-  max-width: 500px;
+  width: 60%;
   font-size: 19px;
 }
+
+/*2560/1440*/
 
 .media {
   display: flex;
@@ -276,19 +297,6 @@ header {
 
 .media__btn {
   order: 3;
-}
-
-.btn {
-  margin-bottom: 40px;
-  padding: 15px 0 0 0;
-  text-align: center;
-  text-decoration: none;
-  width: 170px;
-  height: 40px;
-  color: #c0b8ad;
-  font-weight: 700;
-  font-size: 20px;
-  border: 2px solid #a69f95;
 }
 
 .btn:hover { 
