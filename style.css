@@ -33,6 +33,14 @@ a {
   border-radius: 6px;
 }
 
+.btn:hover { 
+  background: rgb(198, 166, 107); 
+  color: #ffe5a9;
+} 
+.btn:active { 
+  background: rgb(119, 98, 59);
+}
+
 header {
   background-image: url(img/depositphotos_14294527-stock-photo-seeds-and-ears-of-cereal.jpg);
   background-repeat: no-repeat;
@@ -72,7 +80,7 @@ header {
 .header__promo {
   color: white;
   text-align: center;
-  font-size: 80px;
+  font-size: 4em;
   font-weight: 600;
   font-family:sans-serif;
   padding: 5% 0 13% 0;
@@ -257,18 +265,17 @@ header {
   font-size: 19px;
 }
 
-/*2560/1440*/
-
 .media {
   display: flex;
   justify-content: center;
   background-color: rgb(237, 229, 216);
-  min-height: 450px;
+  margin-bottom: 6%;
 }
 
 .media__body {
   display: flex;
-  width: 950px;
+  width: 50%;
+  max-width: 1300px;
   flex-wrap: wrap;
 }
 
@@ -289,7 +296,7 @@ header {
   order: 4;
   flex-grow: 1;
   text-align: right;
-  padding-right: 20px 100px 0 0;
+  padding: 20px 100px 40px 0;
   font-size: 25px;
   font-weight: 600;
   font-style: normal;
@@ -299,31 +306,24 @@ header {
   order: 3;
 }
 
-.btn:hover { 
-  background: rgb(198, 166, 107); 
-  color: #ffe5a9;
-} 
-.btn:active { 
-  background: rgb(119, 98, 59);
-}
-
 .price {
   display: flex;
   justify-content: center;
+  margin-bottom: 6%;
 }
 
 .price__body {
-  width: 950px;
+  width: 50%;
+  max-width: 1300px;
 }
 
 .price__title {
-  margin: 100px 0;
   font-size: 3em;
 }
 
 .price-list {
   width: 100%;
-  min-height: 400px;
+  height: 40em;
   border-collapse: collapse;
   text-transform: uppercase;
   margin-bottom: 100px;
@@ -377,20 +377,19 @@ header {
 }
 
 .order__body {
-  width: 950px;
-  min-height: 900px;
+  width: 50%;
+  max-width: 1300px;
 }
 
 .order__title {
-  margin-top: 60px;
+  margin: 6% 0 2% 0;
   padding-bottom: 0;
-  margin-bottom: 60px;
 }
 
 .order__text {
   font-size: 19px;
-  width: 800px;
-  margin-bottom: 80px;;
+  width: 100%;
+  margin-bottom: 6%;
 }
 
 .field__row {
@@ -398,13 +397,14 @@ header {
 }
 
 .order__field-name {
+  box-sizing: border-box;
   padding: 15px;
   padding-left: 0;
   font-size: 15px;
   font-weight: 600;
   color: rgba(74, 41, 4, 0.9);
   text-transform: uppercase;
-  width: 200px;
+  width: 15%;
   text-align: left;
 }
 
@@ -412,9 +412,21 @@ header {
   text-align: center;
 }
 
-.order__field {
+.order__field_dp {
+  box-sizing: border-box;
   flex-grow: 1;
   font-size: 18px;
+  padding: 5px 20px;
+  background: #e6b66c; 
+  border: 0;
+  width: 35%;
+}
+
+.order__field {
+  box-sizing: border-box;
+  flex-grow: 1;
+  font-size: 18px;
+  width: 85%;
   padding: 5px 20px;
   background: #e6b66c; 
   border: 0;
@@ -447,8 +459,8 @@ header {
 
 .field__check input[type="checkbox"] {
   -webkit-appearance: none;
-  width: 40px;
-  height: 40px;
+  width: 3em;
+  height: 3em;
   background: #e6b66c;
   border-radius: 5px;
   margin-left: 215px
@@ -474,8 +486,8 @@ header {
 
 .order__btn {
   margin-left: 210px;
-  height: 60px;
-  width: 200px;
+  height: 3.3em;
+  width: 15%;
   font-size: 20px;
   text-transform: lowercase;
   background: #834700;
@@ -494,36 +506,40 @@ header {
   background: #4d2a00;
 }
 
+/*2560/1440*/
+
 footer {
   display: flex;
   justify-content: center;
   flex-direction: row;
   background: black;
-  min-height: 300px;
 }
 
 .footer__body {
   display: flex;
-  width: 1000px;
+  width: 50%;
+  max-width: 1300px;
   flex-wrap: wrap;
 }
 
 .footer__logo {
-  margin-top: 70px;
-  padding-left: 30px;
+  margin-top: 6%;
+  padding-left: 3%;
+  width: 17%;
 }
 
 .footer-nav {
   display: flex;
-  min-width: 580px;
-  margin-left: 40px;
+  margin-left: 3%;
+  width: 74%;
   flex-grow: 1;
-  padding-top: 70px;
+  padding: 70px 0 0 0;
 }
 
 .footer-nav__item {
   text-transform: uppercase;
   text-align: center;
+  width: 25%;
   font-weight: 600;
   font-size: 18px;
   flex-grow: 1;
@@ -531,15 +547,21 @@ footer {
   padding: 20px;
 }
 
+.footer__social {
+  margin: 3% 0 0 0;
+}
+
 .footer__text {
   border: 1px solid black;
   flex-grow: 1;
   color: #847a6a;
-  width: 350px;
+  width: 30%;
+  margin: 3% 0 0 0;
   padding: 20px 50px;
 }
 
 .footer__creator {
+  margin: 3% 0 0 0;
   color: #847a6a;
 }
 
@@ -547,7 +569,7 @@ footer {
   display: inline-block;
   text-align: center;
   padding-top: 20px;
-  width: 70px;
-  height: 50px;
+  width: 4.5em;
+  height: 3.1em;
   background: #2c2822;
 }
