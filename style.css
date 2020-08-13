@@ -8,9 +8,8 @@ body {
   order: 3;
   font-size: 2.4em;
   width: 100%;
-  height: 100px;
+  max-height: 100px;
   text-transform: uppercase;
-  width: 100%;
 }
 
 a {
@@ -24,11 +23,11 @@ a {
   text-align: center;
   text-decoration: none;
   width: 30%;
-  height: 5vh;
+  height: 1.8em;
   max-height: 40px;
   color: #c0b8ad;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1em;
   border: 2px solid #a69f95;
   border-radius: 6px;
 }
@@ -203,6 +202,7 @@ header {
   text-align: center;
   width: 50%;
   max-width: 1300px;
+  margin: 0 auto;
   display: flex;
   flex-shrink: 1;
   padding: 45px 0 45px 0;
@@ -229,6 +229,7 @@ header {
 
 .history__body {
   padding: 0 10px;
+  margin: 0 auto;
   max-width: 1300px;
   width: 50%;
 }
@@ -275,6 +276,7 @@ header {
 .media__body {
   display: flex;
   width: 50%;
+  margin: 0 auto;
   max-width: 1300px;
   flex-wrap: wrap;
 }
@@ -314,6 +316,7 @@ header {
 
 .price__body {
   width: 50%;
+  margin: 0 auto;
   max-width: 1300px;
 }
 
@@ -378,11 +381,12 @@ header {
 
 .order__body {
   width: 50%;
+  margin: 0 auto;
   max-width: 1300px;
 }
 
 .order__title {
-  margin: 6% 0 2% 0;
+  margin: 10% 0 6% 0;
   padding-bottom: 0;
 }
 
@@ -408,7 +412,7 @@ header {
   text-align: left;
 }
 
-.field__row .dop-number {
+.dop-number {
   text-align: center;
 }
 
@@ -459,8 +463,8 @@ header {
 
 .field__check input[type="checkbox"] {
   -webkit-appearance: none;
-  width: 3em;
-  height: 3em;
+  width: 30px;
+  height: 30px;
   background: #e6b66c;
   border-radius: 5px;
   margin-left: 215px
@@ -468,7 +472,8 @@ header {
 
 .field__check input[type="checkbox"]:checked {
   background-image: url(img/galochka.png);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   border: 1px solid rgb(72, 63, 39);
   filter: alpha(Opacity=65);
   opacity: 0.65;
@@ -486,7 +491,7 @@ header {
 
 .order__btn {
   margin-left: 210px;
-  height: 3.3em;
+  height: 2.7em;
   width: 15%;
   font-size: 20px;
   text-transform: lowercase;
@@ -520,6 +525,7 @@ footer {
   width: 50%;
   max-width: 1300px;
   flex-wrap: wrap;
+  margin-bottom: 2%;
 }
 
 .footer__logo {
@@ -549,20 +555,26 @@ footer {
 
 .footer__social {
   margin: 3% 0 0 0;
+  width: 29%;
+}
+
+.inst, .vk, .facebook {
+  width: 31%;
 }
 
 .footer__text {
   border: 1px solid black;
   flex-grow: 1;
   color: #847a6a;
-  width: 30%;
+  width: 22%;
   margin: 3% 0 0 0;
-  padding: 20px 50px;
+  padding: 2% 5%;
 }
 
 .footer__creator {
   margin: 3% 0 0 0;
   color: #847a6a;
+  width: 38%;
 }
 
 .creater__logo {
@@ -572,4 +584,103 @@ footer {
   width: 4.5em;
   height: 3.1em;
   background: #2c2822;
+}
+
+/*
+1440+
+980 or 960
+768
+540 or 480
+*/
+
+@media screen and (min-width: 1601px) {
+  .header-nav__item {
+    font-size: 2em;
+  }
+  .order__field {
+    width: 75%;
+  }
+  .order__field-name {
+    width: 25%;
+  }
+  .dop-number {
+    width: 20%;
+  }
+  .order__field_dp {
+    width: 22.5%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .item__btn {
+    font-size: 15px;
+  }
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .price-list {
+    height: 25em;
+  }
+  .footer__body {
+    width: 100%;
+  }
+  .order__field {
+    width: 75%;
+  }
+  .order__field-name {
+    width: 25%;
+  }
+  .dop-number {
+    width: 20%;
+  }
+  .order__field_dp {
+    width: 22.5%;
+  }
+  .footer__logo {
+    width: 15%;
+  }
+  .footer__social {
+    width: 25%;
+  }
+  .field__check .check {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1366px) { /*13*/
+  .item__characteristics {
+    font-size: 14px;
+  }
+  .item__text {
+    font-size: 14px;
+  }
+  .item__btn {
+    font-size: 12px;
+  }
+  .dignity ul {
+    flex-wrap: wrap;
+  }
+  .dignity__item {
+    padding: 3% 15%;
+    width: 100%;
+  }
+  .dignity__item:nth-child(2) {
+    border-left: 0px solid rgba(189, 166, 107, .6);
+    border-right: 0px solid rgba(189, 166, 107, .6);
+    border-top: 1px solid rgba(189, 166, 107, .6);
+    border-bottom: 1px solid rgba(189, 166, 107, .6);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
 }
