@@ -259,6 +259,7 @@ header {
 .history__photo {
   order: 2;
   width: 30%;
+  margin-top: 19px;
 }
 
 .history__text {
@@ -373,6 +374,10 @@ header {
   border-radius: 5px;
 }
 
+.small {
+  display: none;
+}
+
 .order{
   display: flex;
   justify-content: center;
@@ -461,16 +466,16 @@ header {
   align-items: center;
 }
 
-.field__check input[type="checkbox"] {
+.checkbox {
   -webkit-appearance: none;
   width: 30px;
   height: 30px;
   background: #e6b66c;
   border-radius: 5px;
-  margin-left: 215px
+  margin-left: 24%;
 }
 
-.field__check input[type="checkbox"]:checked {
+.checkbox:checked {
   background-image: url(img/galochka.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -479,7 +484,7 @@ header {
   opacity: 0.65;
 }
 
-.field__check .check {
+.check {
   color: #4b433a;
   padding: 10px;
   padding-left: 40px;
@@ -490,7 +495,7 @@ header {
 }
 
 .order__btn {
-  margin-left: 210px;
+  margin-left: 24%;
   height: 2.7em;
   width: 15%;
   font-size: 20px;
@@ -624,6 +629,7 @@ footer {
   }
   .footer__body {
     width: 100%;
+    padding-left: 20px;
   }
   .order__field {
     width: 75%;
@@ -671,16 +677,359 @@ footer {
     border-top: 1px solid rgba(189, 166, 107, .6);
     border-bottom: 1px solid rgba(189, 166, 107, .6);
   }
+  .media__text-name {
+    font-size: 16px;
+    padding-right: 0;
+    padding-top: 0;
+  }
+  .history__name {
+    font-size: 26px;
+  }
+  .order__field-name {
+    font-size: 13px;
+  }
+  .order__field {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+  .order__field_dp {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+  .dop-number {
+    padding-right: 0;
+    margin: auto;
+  }
+  .order__field-comment {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+  .order__size {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+  .field__check .check {
+    font-size: 14px;
+  }
+  .checkbox {
+    width: 25px;
+    height: 25px;
+  }
+  .order__btn {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-
+  .header-nav {
+    font-size: 13px;
+  }
+  .header__promo {
+    font-size: 40px;
+  }
+  .new__items {
+    flex-wrap: wrap;
+  }
+  .item {
+    margin-bottom: 10px;
+  }
+  .dignity__text {
+    font-size: 15px;
+  }
+  .history__main-content {
+    flex-direction: column;
+  }
+  .history__text {
+    order: 2;
+    width: 100%;
+    font-size: 15px;
+  }
+  .history__photo {
+    width: 60%;
+  }
+  .media__text {
+    padding: 0;
+  }
+  .price-list__item {
+    font-size: 14px;
+  }
+  .price-list__name {
+    font-size: 14px;
+  }
+  .novelty {
+    font-size: 10px;
+  }
+  .order__field-name {
+    font-size: 10px;
+  }
+  .field__row {
+    flex-wrap: wrap;
+  }
+  .order__field_dp {
+    width: 75%;
+    margin-top: 10px;
+  }
+  .dop-number{
+    width: 25%;
+    text-align: left;
+    margin-top: 10px;
+  }
+  .order__text {
+    font-size: 14px;
+  }
+  .field__check .check {
+    font-size: 11px;
+  }
+  .checkbox {
+    height: 22px;
+  }
+  .order__btn {
+    font-size: 12px;
+  }
+  .footer-nav {
+    margin-right: 10px;
+  }
+  .creater__logo {
+    width: 65px;
+    height: 50px;
+  }
+  .footer__text {
+    font-size: 12px;
+  }
+  .footer__creator {
+    margin-right: 10px;
+  }
 }
 
 @media screen and (max-width: 800px) {
+  .header-nav__item {
+    font-size: 9px;
+  }
+  .header__promo {
+    font-size: 30px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .new__body {
+    width: 80%;
+  }
+  .item__price {
+    font-size: 13px;
+  }
+  .dignity__title {
+    font-size: 15px;
+  }
+  .dignity__text {
+    font-size: 13px;
+  }
+  .history__body {
+    width: 80%;
+  }
+  .history__name {
+    font-size: 17px;
+  }
+  .history__name-source {
+    font-size: 13px;
+  }
+  .history__main-content {
+    font-size: 13px;
+    margin-top: 0;
+  }
+  .media__body {
+    width: 80%;
+  }
+  .media__text {
+    font-size: 13px;
+  }
+  .media__text-name {
+    font-size: 13px;
+  }
+  .media__btn {
+    font-size: 14px;
+  }
+  .price__body {
+    width: 80%;
+  }
+  .price-list__item {
+    font-size: 14px;
+  }
+  .price-list__name {
+    font-size: 14px;
+  }
+  .novelty {
+    font-size: 9px;
+  }
+  .order__body {
+    width: 80%;
+  }
+  .order__text {
+    font-size: 12px;
+  }
+  .order__field {
+    font-size: 12px;
+  }
+  .order__field_dp {
+    font-size: 12px;
+  }
+  .order__size {
+    font-size: 12px;
+  }
+  .order__field-comment {
+    font-size: 12px;
+  }
+  .order__btn {
+    width: 20%;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
 
+  .footer-nav__item {
+    font-size: 10px;
+    padding: 5px 5px;
+  }
+  .footer-nav {
+    padding-top: 0;
+    margin-top: 40px;
+  }
+  .creater__logo {
+    display: none;
+  }
+  .footer__text {
+    font-size: 10px;
+  }
+
+  .footer__creator {
+    padding-top: 10px;
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 480px) {
+  .header-nav__item {
+    font-size: 10px;
+    width: 45%;
+  }
+  .item__characteristics {
+    font-size: 12px;
+  }
+  .item__text {
+    font-size: 12px;
+  }
+  .history__name-source{
+    font-size: 12px;
+  }
+  .history__text {
+    font-size: 12px;
+  }
+  .media__text {
+    font-size: 12px;
+  }
+  .media__text-name {
+    font-size: 11px;
+  }
+  .media__btn {
+    font-size: 10px;
+  }
+  .price-list__name {
+    font-size: 8px;
+  }
+  .price-list__item {
+    font-size: 8px;
+  }
+  .novelty {
+    font-size: 7px;
+  }
+  .order__body {
+    width: 90%;
+  }
+  .order__field-name {
+    font-size: 9px;
+  }
+  .order__field {
+    font-size: 10px;
+  }
+  .order__field_dp {
+    font-size: 10px;
+  }
+  .order__size {
+    font-size: 10px;
+  }
+  .field__check .check {
+    font-size: 10px;
+  }
+  .order__btn {
+    font-size: 10px;
+  }
+  .footer-nav {
+    display: none;
+  }
+  .footer__creator {
+    display: none;
+  }
+  .footer__social {
+    order: 6;
+    width: 35%;
+  }
+}
 
+@media screen and (max-width: 370px) {
+  .header__promo {
+    font-size: 20px;
+  }
+  .new__body {
+    width: 100%;
+  }
+  .item__btn {
+    font-size: 10px;
+  }
+  .dignity__title {
+    font-size: 14px;
+  }
+  .dignity__text {
+    font-size: 10px;
+  }
+  .dignity__photo {
+    width: 40%;
+  }
+  .media__text {
+    font-size: 10px;
+  }
+  .media__btn {
+    font-size: 8px;
+  }
+  .media__text-name {
+    font-size: 9px;
+  }
+  .price-list__item {
+    font-size: 8px;
+  }
+  .price-list__name {
+    font-size: 8px;
+  }
+  .novelty {
+    font-size: 5px;
+  }
+  .normal {
+    display: none;
+  }
+  .small {
+    display: inline;
+  }
+  .field__row {
+    flex-direction: column;
+  }
+  .dop-number {
+    margin: 10px 0 0 0;
+  }
+  .field__check .check {
+    font-size: 8px;
+  }
+  .checkbox {
+    width: 20px;
+    height: 17px;
+  }
+  .order__btn {
+    width: 30%;
+  }
 }
